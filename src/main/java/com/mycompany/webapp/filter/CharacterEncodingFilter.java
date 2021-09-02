@@ -27,7 +27,7 @@ public class CharacterEncodingFilter implements Filter {
 		request.setCharacterEncoding(this.encoding);
 		//---------------------------------
 		
-		chain.doFilter(request, response);
+		chain.doFilter(request, response); // doFilter()는 다음 필터로 넘어가라는 뜻
 		
 		// 후처리----------------------------
 		System.out.println("CharacterEncodingFilter 후처리");

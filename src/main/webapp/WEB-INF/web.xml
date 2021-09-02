@@ -28,6 +28,7 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 	
+	<!-- 필터의 순서 중요! -->
 	<filter>
 		<filter-name>encodingFilter</filter-name>
 		<filter-class>com.mycompany.webapp.filter.CharacterEncodingFilter</filter-class>
